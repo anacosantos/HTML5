@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--inicia a tag de marcação do cabeçalho-->
+<html>
+
+<header>
+  <!--colocando imagem-->
+
+<a href="http://www.facebook.com/mvgmenezes" >
+
+<img src="kitu.png" height="426" width="1347"/>
+
+</a>
+
+<meta charset=”uft-8”> <!--acentuação-->
+<meta charset=”pt-br”> <!--pág portug Brasil-->
+<title> Projeto Final MVG</title> 
+
+<nav id="menuSup">
+    <ul id="itensMenu">
+        <li><a href="Links e Imagens.html">Home</a></li>  
+        <li><a href="inicio.html">Contatos</a></li>
+        <li><a href="Lista ord desord .html">Cursos</a></li>
+    </ul>
+</nav>
+<!--estilo nas divs-->
+<style>
+    .divcont1{
+	width: 20%;
+	height: auto;
+    margin-left: 1%;
+	float: left;
+	padding: 1% 6%;
+	<!---->
+}
+</style>
+
+</header>
+
+<body>
+    <section id="conteúdo">
+        <h1><u>Marcus Menezes</u></h1>
+            <!--parágrafo em todo texto-->  
+            <!--em transf em itálico-->
+            <p>O <strong>Marcus</strong> é uma <em>Analista de Sistema e terapêuta de alinhamento energético</em> com especialidades
+            e com 12 anos de experiência. Agora ela está espalhando seu conhecimento pelo mundo. 
+            Hoje ele vive na Estônia atuando como Engenheiro de Software e breve como
+            terapêuta de alinhamento energético, usando suas técnicas aprimoradas de anos de estudo. 
+          <h3>Analista de Sistemas</h3>
+              Graduado em Analise de Ssstemas e especializado em liderança de time
+              e interpessoal. Ampla experiênca em desenvolvimento, principalmente
+              em Java que é sua lígua mais fluente. Ele é full-stack e tem amplo
+              conhecimento em java, js, node js, mongo db, react native e IOS.
+              Desenvolvedor com certificação em Scrum Master.
+          <h3>Terapeuta de alinhamento energético</h3>
+              Começou seus estudos na terapia em 2006 e alguns 
+              cursos profundos de anos sobre alinhamento.
+              Acompanhou mestres do estudo e se formou em professor de alinhamento
+              energético. O professor <mark>Marcus Menezes</mark>,
+              Instruiu e ajudou muitos de seus alunos a construir seu desenvolvimento interpessoal e inteligência emocional equilibrada.</p> 
+               
+              <form id="_contato" action="index.php">
+
+                <fieldset><legend>Dados</legend>
+                    <div>
+                        <label for="_Nome">
+                            Nome:
+                            <input type="text" id="_Nome" placeholder="Digite seu Nome" >
+                        </label>
+                    </div>
+        
+                    <div>
+                        <label>
+                            Sobrenome:
+                            <input type="text" id="_Sobrenome"  required="required" pattern="[a-z\s]+$" 
+                            placeholder="Digite seu Sobrenome">
+                        </label>
+                    </div>
+        </fieldset>
+                
+                <fieldset><legend>Cursos</legend>
+                    <div>
+                        <label for="_Cursos" style="float:left;">
+                            Cursos
+                            <select id="_Cursos">
+                                <option value="JAVA">JAVA</option>
+                                <option value="CSS">CSS</option>    
+                                <option value="HTML">HTML</option>    
+                            </select>
+                    </div>
+    
+                </fieldset>
+    
+    
+                
+                <!--usando radio-->
+                <fieldset><legend>Próximos curso</legend>
+                    <input type="radio" name="_curso" id="_curso" value="PHP"/>PHP<br />
+                    <input type="radio" name="_curso" id="_curso" value="JS AVANÇADO"/>JS - Avançado<br />
+                    <input type="radio" name="_curso" id="_curso" value="DESIGN"/>Design<br />    
+                </fieldset>
+    
+                <!--usando checkbox-->
+                <fieldset><legend>Cursos Realizados</legend>
+                    <input type="checkbox" name="_curso" id="_curso" value="OO"/>Orientação à objetos<br />
+                    <input type="checkbox" name="_curso" id="_curso" value="HTML"/>HTML<br />
+                </fieldset>   
+               
+                <div>
+                    <label for="_TextoMultiLine" style='display:center'>Comentários</label><br/>
+                    <textarea id="_TextoMultiLine"></textarea>
+                </div>
+    
+                <div>
+                <input id="_enviar" type="submit"
+                 value="Enviar Dados" style="height:2em;"/></div>    
+    
+            </form>
+      </section>
+      
+    </body>
+  </html>  
