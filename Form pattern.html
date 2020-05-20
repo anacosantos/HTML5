@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--inicia a tag de marcação do cabeçalho-->
+<html>
+
+<header>
+  <!--colocando imagem-->
+
+<a href="http://www.facebook.com/mvgmenezes" >
+<img src="kitu.png" height="200" width="350"/>
+</a>
+
+<meta charset=”uft-8”> <!--acentuação-->
+<meta charset=”pt-br”> <!--pág portug Brasil-->
+<!--titulo da pag-->
+<title> Tag de formalários pattern</title> 
+</header>
+
+<body>
+    <form id="_contato" action="index.php">
+
+        <fieldset><legend>Dados</legend>
+            <div>
+                <label for="_Nome">
+                    Nome:
+                    <input type="text" id="_Nome" placeholder="Digite seu Nome" >
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Sobrenome:
+                    <input type="text" id="_Sobrenome"  required="required" pattern="[a-z\s]+$" 
+                    placeholder="Digite seu Sobrenome">
+                </label>
+            </div>
+</fieldset>
+            
+            <fieldset><legend>Cursos</legend>
+                <div>
+                    <label for="_Cursos" style="float:left;">
+                        Cursos
+                        <select id="_Cursos">
+                            <option value="JAVA">JAVA</option>
+                            <option value="CSS">CSS</option>    
+                            <option value="HTML">HTML</option>    
+                        </select>
+                </div>
+
+            </fieldset>
+
+
+            
+            <!--usando radio-->
+            <fieldset><legend>Próximos curso</legend>
+                <input type="radio" name="_curso" id="_curso" value="PHP"/>PHP<br />
+                <input type="radio" name="_curso" id="_curso" value="JS AVANÇADO"/>JS - Avançado<br />
+                <input type="radio" name="_curso" id="_curso" value="DESIGN"/>Design<br />    
+            </fieldset>
+
+            <!--usando checkbox-->
+            <fieldset><legend>Cursos Realizados</legend>
+                <input type="checkbox" name="_curso" id="_curso" value="OO"/>Orientação à objetos<br />
+                <input type="checkbox" name="_curso" id="_curso" value="HTML"/>HTML<br />
+            </fieldset>   
+           
+            <div>
+                <label for="_TextoMultiLine" style='display:center'>Comentários</label><br/>
+                <textarea id="_TextoMultiLine"></textarea>
+            </div>
+
+            <div>
+            <input id="_enviar" type="submit"
+             value="Enviar Dados" style="height:2em;"/></div>    
+
+        </form>
+</body>
+</html>    
