@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+.menu{/* pode ser background-color */
+    background: rgb(181, 212, 247);;
+}
+/* Remove bolinhas das listas, numeração */
+.menu .menu-list, .menu .sub-menu{
+    list-style: none;
+}
+/* Configura os links ativos */
+.menu a{
+    color: rgb(3, 3, 250);
+    text-decoration: none; /* remove sublinhado do texto do link*/
+    display: block;/* auto ajuste */
+    cursor: pointer;
+    text-transform: uppercase;/* upper escrito no menu fique em letras maius*/
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:0.2em;
