@@ -45,14 +45,14 @@
     left: 5px;
     background: blue;
     min-width: 200px;
-    z-index: 1000;
+    z-index: 1000;/* vai para frente dos outros submenus */
     display: none;
   }
-  /* Configura os links do submenu */
+  /* Configura espaçmento dos links do submenu */
   .menu > .menu-list > li > .sub-menu > li > a {
       padding: 30px 50px;
   }
-  /* Clearfix para o menu */
+  /* Clearfix para o menu, esconder submenu */
   .menu:after {
     content: '.';
     display: block;
@@ -61,3 +61,49 @@
     line-height: 0;
     height: 0;
   }
+  /*menu*/
+
+.menu{/*CSS do NAV*/
+  background-color:#fff;
+  width:80%;
+  padding-left:60%;	
+}
+
+#menu{/*CSS do NAV*/
+	background-color:#fff;
+	width:80%;
+	padding-left:60%;	
+}
+#menu a{/*CSS da classe a:active*/
+	   width:30px;
+	   height:10px;
+	   color:#FFBF00;
+	   text-decoration:none;
+	   font-size:26px;
+	   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	   list-style:none;
+	   font-weight: 700;
+	   letter-spacing:0.2em;
+}
+#menu a:hover{/*CSS da classe a:hover*/
+	 text-decoration:none;
+	 color:#D8D8D8;
+	 }
+	 #menu > .menu-list > li{
+	float: left;
+	position: relative;
+	list-style:none;
+	padding: 15px;
+	margin: 0 5px;
+}
+footer{
+	color: #000033;
+	background-color: #FFF;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 18px;
+	clear: both;
+	
+	text-decoration: none;
+}
