@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Usando DOM</title>
+<script type="text/javascript">
+        function trocaTexto( ) {
+           document.getElementsById("destaque").innerHTML
+        }
+    </script>
+</head>
+<body>
+    <div id="destaque"> 
+	<p>Veja, o elemento <code>document.getElementById</code> tem a função de pegar tudo que está com esta identificação e alterar, usando a propriedade:
+	<code>.innerHTML</code> que tem a função de trocar o texto</p>
+	
+    <button onclick="trocaTexto()"> Clique no botão e mude o texto da classe 'destaque'.</button>
+    
+</body>
+</html>
